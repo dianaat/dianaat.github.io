@@ -6,7 +6,7 @@
 var myName = "Andreea";
 var age = 23;
 // console.info("My name is " + myName + ", I'm " + age + " years old.");
-age = 30;
+age = 40;
 // console.info("My name is " + myName + ", I'm " + age + " years old.");
 age = 31;
 // console.info("My name is " + myName + ", I'm " + age + " years old.");

@@ -21,40 +21,37 @@ console.warn(mottoElement.innerHTML);
 mottoElement.innerHTML += " & " + jobTitle;
 
 function hidePage(id) {
-  console.info("hide", id);
   document.getElementById(id).style.display = "none";
 }
 
 function showPage(id) {
-  console.warn("show", id);
   document.getElementById(id).style.display = "block";
 }
 
-function showHomePage() {
+function hideAllPages() {
+  hidePage("home");
   hidePage("skills");
   hidePage("projects");
   hidePage("languages");
+}
+
+function showHomePage() {
+  hideAllPages();
   showPage("home");
 }
 
 function showSkillsPage() {
-  hidePage("home");
-  hidePage("projects");
-  hidePage("languages");
+  hideAllPages();
   showPage("skills");
 }
 
 function showProjectsPage() {
-  hidePage("skills");
-  hidePage("home");
-  hidePage("languages");
+  hideAllPages();
   showPage("projects");
 }
 
 function showLanguagesPage() {
-  hidePage("skills");
-  hidePage("home");
-  hidePage("projects");
+  hideAllPages();
   showPage("languages");
 }
 

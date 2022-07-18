@@ -25,32 +25,37 @@ function hidePage(id) {
   document.getElementById(id).style.display = "none";
 }
 
+function showPage(id) {
+  console.warn("show", id);
+  document.getElementById(id).style.display = "block";
+}
+
 function showHomePage() {
   hidePage("skills");
   hidePage("projects");
   hidePage("languages");
-  document.getElementById("home").style.display = "block";
+  showPage("home");
 }
 
 function showSkillsPage() {
   hidePage("home");
   hidePage("projects");
   hidePage("languages");
-  document.getElementById("skills").style.display = "block";
+  showPage("skills");
 }
 
 function showProjectsPage() {
   hidePage("skills");
   hidePage("home");
   hidePage("languages");
-  document.getElementById("projects").style.display = "block";
+  showPage("projects");
 }
 
 function showLanguagesPage() {
   hidePage("skills");
   hidePage("home");
   hidePage("projects");
-  document.getElementById("languages").style.display = "block";
+  showPage("languages");
 }
 
 showHomePage();

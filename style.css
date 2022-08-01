@@ -96,6 +96,11 @@ p {
   background: #fff;
 }
 
+#top-menu-bar a.active {
+  color: #108eb4;
+  background: #ff0;
+}
+
 .page {
   background: #fff;
   border-radius: 0.5rem;

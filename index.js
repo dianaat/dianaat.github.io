@@ -34,11 +34,14 @@ function hideAllPages() {
   hide("projects");
   hide("languages");
 }
+var activePage = "home";
 
 function showPage(id) {
-  console.warn("pls show me this page", id);
   hideAllPages();
   show(id);
+  document.getElementById("menu-" + activePage).classList.remove("active");
+  document.getElementById("menu-" + id).classList.add("active");
+  activePage = id;
 }
 
-showPage("home");
+showPage(activePage);

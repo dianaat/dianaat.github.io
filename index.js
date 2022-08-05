@@ -28,7 +28,7 @@ function show(id) {
   document.getElementById(id).style.display = "block";
 }
 
-var activePage = "skills";
+var activePage = "home";
 
 function showPage(nextPage) {
   console.warn("change", activePage, "to", nextPage);
@@ -46,13 +46,12 @@ function initEvents() {
     .getElementById("top-menu-bar")
     .addEventListener("click", function (e) {
       if (e.target.matches("a")) {
-        var id = e.target.id.getAtribute(`data-page`);
+        var id = e.target.getAttribute("data-page");
         console.warn("click pe menu", id, e.target.matches("a"));
-        showPage("id");
+        showPage(id);
       }
     });
 }
 
 showPage(activePage);
-
 initEvents();

@@ -59,10 +59,13 @@ initEvents();
 function displaySkills() {
   var ul = document.querySelector("#skills ul");
   var skills = [
-    { name: "js", endorcements: 15 },
-    { name: "html", endorcements: 5 },
-    { name: "css", endorcements: 10 },
+    { name: "js", endorcements: 15, favorite: true },
+    { name: "html", endorcements: 5, favorite: false },
+    { name: "css", endorcements: 10, favorite: true },
   ];
+  skills.sort(function (a, b) {
+    return b.endorcements - a.endorcements;
+  });
   console.info(skills);
   for (var i = 0; i < skills.length; i++) {
     ul.innerHTML += `<li>${skills[i].name} - ${skills[i].endorcements}</li>`;

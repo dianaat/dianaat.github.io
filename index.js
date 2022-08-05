@@ -28,7 +28,7 @@ function show(id) {
   document.getElementById(id).style.display = "block";
 }
 
-var activePage = "home";
+var activePage = "skills";
 
 function showPage(nextPage) {
   console.warn("change", activePage, "to", nextPage);
@@ -39,4 +39,10 @@ function showPage(nextPage) {
   activePage = nextPage;
 }
 
+function initEvents() {
+  document.getElementById("top-menu-bar").addEventListener("click");
+}
+
 showPage(activePage);
+
+initEvents();

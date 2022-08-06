@@ -78,3 +78,6 @@ function loadSkills() {
 }
 
 loadSkills();
+
+var count = 0;
+var suma = "0";

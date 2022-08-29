@@ -7,22 +7,21 @@
      <title>Andreea's CV</title>
      <link rel="stylesheet" href="style.css">
  </head>
- <body>
-     
+ <body> 
     <header>
         <div id="header-wrapper">
             <div id="avatar" >
                 <img 
-                    style="border-radius: 50%;"
+                    style="border-radius: 50%; margin: 10% 0 0 10%;"
                     src="img/poza_profil.jpg" alt="" width="100">
             </div>
             <div id="header-info">
-                <h1>Andreea Toader</h1>
+                <h1 id = "name">Andreea Toader</h1>
                 <p id="motto"> <span>Accountant</span></p>
             </div>
             
         </div>
-            <ul id="top-menu-bar" >
+        <ul id="top-menu-bar" >
             <li><a href="#" data-page="home">Home</a></li>
             <li><a href="#" data-page="skills">Skills</a></li>
             <li><a href="#" data-page="projects">Projects</a></li>
@@ -31,29 +30,31 @@
         
     </header>
  
-         <section id="content" >
-         <div id="side-menu" >
+    <section id="content" >
+        <div id="side-menu" >
              <section>
                 <form action="" method="get">
-                    <input type="text" name="email" id="userEmail">
+                    <input type="text" name="email" id="userEmail" placeholder="e-mail" >
                     <button type="submit">Contact me</button>
                 </form>
              </section>
              <section>Second Menu</section>
-         </div>
+        </div>
             
-         <div id="main">
+        <div id="main">
 
-            <div id="home" class="page" >
-                <h2>Home</h2>
+            <div id="home" class="page">
+                <h2 id="title" >Home</h2>
+                <div class="scroll-down"></div>
+
                 <p>
-                    <h3>
+                    <h3 id ="personaldetails">
                         Personal details
                     </h3>
-                    <p>
-                        <h4>E-mail adress:</h4>toaderandreea10@gmail.com<br/>
-                        <h4>Phone number:</h4>0742****29<br/>
-                        <h4>Adress:</h4>str. Ampoiului, nr. 17, bl. A4, ap. 20<br/>
+                    <p id = "data">
+                        <b>E-mail adress:</b>toaderandreea10@gmail.com<br/>
+                        <b>Phone number:</b>0742****29<br/>
+                        <b>Adress:</b>str. Ampoiului, nr. 17, bl. A4, ap. 20<br/>
                     </p>
 
                     <p>
@@ -61,7 +62,7 @@
                         Profile
                     </h3>
 
-                    <p>
+                    <p id="profile">
                         I am an accountant with 2 years of experience in primary accounting, currently learning how to work on javascript.
                         I'm a person that tries to learn and do new things as fast as I can, I'm a communicative person that likes to have a good relation with my coworkers for a better working enviroment.
                         I'm looking for a full-time or part-time job as a web developer because I want to reprofile myself and because I believe that programming is a job of the future. 
@@ -70,22 +71,32 @@
 
 
                 </p>
-                </p>
+
+                
             </div>           
 
             <div id="skills" class="page">
                 <h2>Skills</h2>
-                <ul></ul>               
+                <ul>
+                    <li>js</li>
+                    <li>css</li>
+                    <li>html</li>
+                </ul>
+                            
             </div>
 
             <div id="projects" class="page">
-                <h2>Projects</h2>
+                <h2>Projects 1</h2>
+            </div>
+
+            <div id="projects" class="page">
+                <h2>Projects 2</h2>
             </div>
             
-            <div id="languages" class="page" >
+            <div id="languages" class="page">
                 <h2>Known languages</h2>
                 
-                <table border="1" >       
+                <table border="1">       
                     <tr>
                         <td>English</td>
                         <td>Good</td>
@@ -97,11 +108,11 @@
                     </tr>
                 </table>
             </div>
- 
-     </section>
+        </div>
+    </section>
  
      <footer>
-        <p style="text-align: center;" >
+        <p style="text-align: center;">
             <a href="https://web.whatsapp.com/">Whatsapp</a>
             2022
         </p>

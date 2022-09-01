@@ -10,6 +10,23 @@ body {
   background: #f6f5ff;
 }
 
+table {
+  width: 200px;
+}
+
+th {
+  text-align: left;
+}
+
+table, th, td {
+  border: 3px solid rgb(16, 184, 167);
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
 #content {
   flex: 1;
   display: flex;
@@ -34,7 +51,7 @@ body {
   flex: 1;
 }
 
-#name{
+#name {
   text-indent: 20px;
 }
 
@@ -42,29 +59,29 @@ body {
   text-align: center;
 }
 
-#data{
+#data {
   line-height: 0.6cm;
   font-size: 17px;
 }
 
-#profile{
+#profile {
   line-height: 0.6cm;
   font-size: 17px;
   text-align: justify;
   text-indent: 30px;
 }
 
-#education{
+#education {
   line-height: 0.6cm;
   font-size: 17px;
 }
 
-#experience{
+#experience {
   line-height: 0.6cm;
   font-size: 17px;
 }
 
-#qualification{
+#qualification {
   line-height: 0.6cm;
   font-size: 17px;
 }
@@ -73,7 +90,7 @@ body {
   margin-bottom: 10px;
 }
 
-.scroll-down{
+.scroll-down {
   height: 50px;
   width: 30px;
   border: 2px solid black;
@@ -85,7 +102,7 @@ body {
 }
 
 .scroll-down::before,
-.scroll-down::after{
+.scroll-down::after {
   content: '';
   position: absolute;
   top: 20%;
@@ -99,7 +116,7 @@ body {
   animation: scroll-down 1s ease-in-out infinite;
 }
 
-.scroll-down::after{
+.scroll-down::after {
   top: 30%;
   animation-delay: .3s;
 }
@@ -120,7 +137,7 @@ body {
   }
 }
 
-.scroll-up{
+.scroll-up {
   height: 50px;
   width: 30px;
   border: 2px solid black;
@@ -132,7 +149,7 @@ body {
 }
 
 .scroll-up::before,
-.scroll-up::after{
+.scroll-up::after {
   content: '';
   position: absolute;
   top: 25%;
@@ -146,7 +163,7 @@ body {
   animation: scroll-up 1s ease-in-out infinite;
 }
 
-.scroll-up::after{
+.scroll-up::after {
   top: 30%;
   animation-delay: .3s;
 }

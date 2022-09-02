@@ -45,8 +45,7 @@
 
             <div id="home" class="page">
                 <h2 id="title" >Home</h2>
-                <div class="scroll-down"></div>
-                <div class="scroll-up"></div>
+                <div class="scroll-down" onclick="scrollDown()"></div>
 
                 <p>
                     <h3>
@@ -95,17 +94,11 @@
 
                 </p>
 
-                
+                <div class="scroll-up" onclick="scrollUp()"></div>
             </div>           
 
             <div id="skills" class="page">
                 <h2>Skills</h2>
-                <ul>
-                    <li>js</li>
-                    <li>css</li>
-                    <li>html</li>
-                </ul>
-                            
             </div>
 
             <div id="projects" class="page">
@@ -146,5 +139,14 @@
      </footer>
 
     <script src="index.js"></script>
+    <script>
+        function scrollUp() {
+            window.scrollTo(0, 0);
+        }
+
+        function scrollDown() {
+            window.scrollTo(window.innerHeight, window.innerHeight);
+        }
+    </script>
  </body>
  </html>
